@@ -1,0 +1,43 @@
+.leave-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.detail-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.detail-item label{
+
+    color:#9ca3af;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.detail-item p{
+
+    color:white;
+
+    line-height:1.6;
+
+}
+
+.detail-item .status{
+
+    width:fit-content;
+
+}

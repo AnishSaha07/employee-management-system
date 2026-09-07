@@ -1,0 +1,144 @@
+.leave-table-card{
+
+    background:#181818;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+}
+
+.leave-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.leave-table th,
+.leave-table td{
+
+    padding:18px;
+
+    text-align:left;
+
+}
+
+.leave-table thead{
+
+    background:#202020;
+
+}
+
+.leave-table th{
+
+    color:#9ca3af;
+
+}
+
+.leave-table tbody tr{
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+}
+
+.employee-name h4{
+
+    color:white;
+
+    margin-bottom:6px;
+
+}
+
+.employee-name span{
+
+    color:#9ca3af;
+
+    font-size:13px;
+
+}
+
+.leave-status{
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.leave-status.pending{
+
+    background:#f59e0b22;
+
+    color:#f59e0b;
+
+}
+
+.leave-status.approved{
+
+    background:#22c55e22;
+
+    color:#22c55e;
+
+}
+
+.leave-status.rejected{
+
+    background:#ef444422;
+
+    color:#ef4444;
+
+}
+
+.leave-actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.leave-actions button{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.approve-btn{
+
+    background:#16a34a;
+
+}
+
+.reject-btn{
+
+    background:#dc2626;
+
+}
+
+.empty-row{
+
+    text-align:center;
+
+    color:#9ca3af;
+
+    padding:40px;
+
+}

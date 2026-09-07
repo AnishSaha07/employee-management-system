@@ -1,0 +1,981 @@
+/* =================================
+   ANNOUNCEMENT MANAGEMENT
+================================= */
+
+.announcement-management {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.announcement-management-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 24px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    border-radius: 18px;
+
+}
+
+
+.announcement-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    min-width: 0;
+
+}
+
+
+.announcement-main-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: rgba(239,68,68,.12);
+
+    color: #ef4444;
+
+    font-size: 20px;
+
+}
+
+
+.announcement-title h3 {
+
+    margin: 0 0 5px;
+
+    color: #fff;
+
+    font-size: 19px;
+
+    font-weight: 650;
+
+}
+
+
+.announcement-title p {
+
+    margin: 0;
+
+    color: #8d8d8d;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+}
+
+
+/* =================================
+   ADD BUTTON
+================================= */
+
+.announcement-add-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 44px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2563eb;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+
+    white-space: nowrap;
+
+}
+
+
+.announcement-add-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(37,99,235,.25);
+
+}
+
+
+/* =================================
+   FORM CARD
+================================= */
+
+.announcement-form-card {
+
+    padding: 24px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    border-radius: 18px;
+
+}
+
+
+.announcement-form-header {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 24px;
+
+}
+
+
+.announcement-form-header h3 {
+
+    margin: 0 0 5px;
+
+    color: #fff;
+
+    font-size: 18px;
+
+}
+
+
+.announcement-form-header p {
+
+    margin: 0;
+
+    color: #858585;
+
+    font-size: 13px;
+
+}
+
+
+.announcement-close-btn {
+
+    width: 36px;
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 10px;
+
+    background: #202020;
+
+    color: #aaa;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+
+}
+
+
+.announcement-close-btn:hover {
+
+    color: #fff;
+
+    background: #2a2a2a;
+
+}
+
+
+/* =================================
+   FORM
+================================= */
+
+.announcement-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+
+}
+
+
+.announcement-form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+
+}
+
+
+.announcement-form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+
+.announcement-form-group label {
+
+    color: #d1d5db;
+
+    font-size: 13px;
+
+    font-weight: 550;
+
+}
+
+
+.announcement-form-group input,
+.announcement-form-group select,
+.announcement-form-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    outline: none;
+
+    border-radius: 12px;
+
+    background: #1c1c1c;
+
+    color: #fff;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition: .25s ease;
+
+}
+
+
+.announcement-form-group input,
+.announcement-form-group select {
+
+    height: 48px;
+
+    padding: 0 15px;
+
+}
+
+
+.announcement-form-group textarea {
+
+    min-height: 120px;
+
+    padding: 14px 15px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+
+}
+
+
+.announcement-form-group input::placeholder,
+.announcement-form-group textarea::placeholder {
+
+    color: #666;
+
+}
+
+
+.announcement-form-group input:focus,
+.announcement-form-group select:focus,
+.announcement-form-group textarea:focus {
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+
+}
+
+
+/* =================================
+   FORM ACTIONS
+================================= */
+
+.announcement-form-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    padding-top: 4px;
+
+}
+
+
+.announcement-cancel-btn,
+.announcement-save-btn {
+
+    min-height: 46px;
+
+    padding: 0 20px;
+
+    border-radius: 11px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+
+}
+
+
+.announcement-cancel-btn {
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    background: #222;
+
+    color: #ddd;
+
+}
+
+
+.announcement-cancel-btn:hover {
+
+    background: #2c2c2c;
+
+}
+
+
+.announcement-save-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: #fff;
+
+}
+
+
+.announcement-save-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+
+}
+
+
+/* =================================
+   ANNOUNCEMENT LIST
+================================= */
+
+.announcement-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+
+.announcement-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    border-radius: 16px;
+
+    transition: .25s ease;
+
+}
+
+
+.announcement-item:hover {
+
+    border-color: rgba(37,99,235,.35);
+
+    transform: translateY(-1px);
+
+}
+
+
+.announcement-item.inactive {
+
+    opacity: .58;
+
+}
+
+
+.announcement-item-content {
+
+    min-width: 0;
+
+    flex: 1;
+
+}
+
+
+.announcement-meta {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.announcement-meta span {
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+.announcement-type {
+
+    background: rgba(37,99,235,.12);
+
+    color: #60a5fa;
+
+}
+
+
+.announcement-priority {
+
+    background: rgba(255,255,255,.06);
+
+    color: #aaa;
+
+}
+
+
+.announcement-priority.high {
+
+    background: rgba(245,158,11,.12);
+
+    color: #fbbf24;
+
+}
+
+
+.announcement-priority.urgent {
+
+    background: rgba(239,68,68,.12);
+
+    color: #f87171;
+
+}
+
+
+.announcement-meta small {
+
+    color: #666;
+
+    font-size: 11px;
+
+}
+
+
+.announcement-item-content h4 {
+
+    margin: 0 0 7px;
+
+    color: #fff;
+
+    font-size: 16px;
+
+    font-weight: 650;
+
+    word-break: break-word;
+
+}
+
+
+.announcement-item-content p {
+
+    margin: 0;
+
+    color: #929292;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    word-break: break-word;
+
+}
+
+
+/* =================================
+   STATUS
+================================= */
+
+.announcement-status {
+
+    margin-top: 12px;
+
+}
+
+
+.active-status,
+.inactive-status {
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+.active-status {
+
+    color: #22c55e;
+
+}
+
+
+.inactive-status {
+
+    color: #777;
+
+}
+
+
+/* =================================
+   ACTIONS
+================================= */
+
+.announcement-item-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    flex-shrink: 0;
+
+}
+
+
+.announcement-item-actions button {
+
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    border-radius: 10px;
+
+    background: #202020;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: .2s ease;
+
+}
+
+
+.announcement-edit-btn {
+
+    color: #60a5fa;
+
+}
+
+
+.announcement-edit-btn:hover {
+
+    background: rgba(37,99,235,.14);
+
+    border-color: rgba(37,99,235,.3);
+
+}
+
+
+.announcement-toggle-btn {
+
+    color: #22c55e;
+
+}
+
+
+.announcement-toggle-btn:hover {
+
+    background: rgba(34,197,94,.12);
+
+}
+
+
+.announcement-delete-btn {
+
+    color: #f87171;
+
+}
+
+
+.announcement-delete-btn:hover {
+
+    background: rgba(239,68,68,.12);
+
+    border-color: rgba(239,68,68,.25);
+
+}
+
+
+/* =================================
+   EMPTY STATE
+================================= */
+
+.announcement-empty {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 260px;
+
+    padding: 30px;
+
+    background: #151515;
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    border-radius: 18px;
+
+    text-align: center;
+
+}
+
+
+.announcement-empty > svg {
+
+    margin-bottom: 14px;
+
+    color: #555;
+
+    font-size: 38px;
+
+}
+
+
+.announcement-empty h4 {
+
+    margin: 0 0 6px;
+
+    color: #ddd;
+
+    font-size: 16px;
+
+}
+
+
+.announcement-empty p {
+
+    margin: 0 0 18px;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+.announcement-empty button {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    min-height: 42px;
+
+    padding: 0 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .2s ease;
+
+}
+
+
+.announcement-empty button:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 900px) {
+
+    .announcement-management-header {
+
+        align-items: flex-start;
+
+    }
+
+    .announcement-form-row {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .announcement-management-header {
+
+        flex-direction: column;
+
+        padding: 18px;
+
+    }
+
+
+    .announcement-title {
+
+        width: 100%;
+
+    }
+
+
+    .announcement-add-btn {
+
+        width: 100%;
+
+    }
+
+
+    .announcement-form-card {
+
+        padding: 18px;
+
+    }
+
+
+    .announcement-item {
+
+        flex-direction: column;
+
+        padding: 17px;
+
+    }
+
+
+    .announcement-item-actions {
+
+        width: 100%;
+
+        justify-content: flex-end;
+
+        padding-top: 12px;
+
+        border-top: 1px solid rgba(255,255,255,.06);
+
+    }
+
+
+    .announcement-form-actions {
+
+        flex-direction: column-reverse;
+
+    }
+
+
+    .announcement-cancel-btn,
+    .announcement-save-btn {
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .announcement-title {
+
+        align-items: flex-start;
+
+    }
+
+
+    .announcement-main-icon {
+
+        width: 42px;
+
+        height: 42px;
+
+        border-radius: 12px;
+
+    }
+
+
+    .announcement-title h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .announcement-title p {
+
+        font-size: 12px;
+
+    }
+
+
+    .announcement-item-content h4 {
+
+        font-size: 15px;
+
+    }
+
+
+    .announcement-item-content p {
+
+        font-size: 12px;
+
+    }
+
+}

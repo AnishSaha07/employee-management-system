@@ -1,0 +1,672 @@
+/* ==========================================
+        ATTENDANCE MANAGEMENT
+========================================== */
+
+.attendance-management {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    color: #fff;
+}
+
+
+/* ==========================================
+                HEADER
+========================================== */
+
+.attendance-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.attendance-header h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 7px;
+    letter-spacing: -0.5px;
+}
+
+.attendance-header p {
+    color: #9ca3af;
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+                REFRESH BUTTON
+========================================== */
+
+.attendance-refresh-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    min-width: 110px;
+    height: 42px;
+
+    padding: 0 16px;
+
+    border: 1px solid rgba(59, 130, 246, 0.5);
+    border-radius: 10px;
+
+    background: rgba(37, 99, 235, 0.08);
+    color: #60a5fa;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.attendance-refresh-btn:hover:not(:disabled) {
+    background: rgba(37, 99, 235, 0.16);
+    border-color: #3b82f6;
+    transform: translateY(-1px);
+}
+
+.attendance-refresh-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+            ADMIN SELF ATTENDANCE
+========================================== */
+
+.admin-self-attendance {
+    background: linear-gradient(
+        145deg,
+        #1b1b1b,
+        #161616
+    );
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 18px;
+
+    padding: 22px 24px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.16);
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+/* ==========================================
+            ADMIN ATTENDANCE INFO
+========================================== */
+
+.admin-self-attendance-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.admin-location-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: rgba(37, 99, 235, 0.14);
+    color: #60a5fa;
+
+    font-size: 20px;
+}
+
+.admin-self-attendance-info h3 {
+    margin: 0 0 5px;
+
+    color: #ffffff;
+
+    font-size: 19px;
+    font-weight: 650;
+}
+
+.admin-self-attendance-info p {
+    margin: 0;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+            ADMIN STATUS AREA
+========================================== */
+
+.admin-self-attendance-status {
+    display: flex;
+    align-items: stretch;
+
+    min-height: 74px;
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 13px;
+
+    background: #181818;
+}
+
+
+/* ==========================================
+            ADMIN STATUS ITEM
+========================================== */
+
+.admin-today-status,
+.admin-today-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 12px 22px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.07);
+
+    min-width: 145px;
+}
+
+.admin-today-status span,
+.admin-today-time span {
+    color: #8f96a3;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    margin-bottom: 7px;
+}
+
+.admin-today-status strong,
+.admin-today-time strong {
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 650;
+}
+
+
+/* ==========================================
+            ADMIN ATTENDANCE BUTTONS
+========================================== */
+
+.admin-attendance-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    margin-left: auto;
+}
+
+
+/* ==========================================
+                CHECK IN
+========================================== */
+
+.admin-check-in-btn,
+.admin-check-out-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 125px;
+    height: 42px;
+
+    padding: 0 17px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 650;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.admin-check-in-btn {
+    background: #2563eb;
+
+    box-shadow:
+        0 5px 16px rgba(37, 99, 235, 0.22);
+}
+
+.admin-check-in-btn:hover:not(:disabled) {
+    background: #3b82f6;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 20px rgba(37, 99, 235, 0.3);
+}
+
+
+.admin-check-out-btn {
+    background: #dc2626;
+
+    box-shadow:
+        0 5px 16px rgba(220, 38, 38, 0.18);
+}
+
+.admin-check-out-btn:hover:not(:disabled) {
+    background: #ef4444;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 7px 20px rgba(220, 38, 38, 0.25);
+}
+
+.admin-check-in-btn:disabled,
+.admin-check-out-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* ==========================================
+        ATTENDANCE COMPLETED
+========================================== */
+
+.admin-attendance-completed {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 38px;
+
+    padding: 0 15px;
+
+    border-radius: 9px;
+
+    background: rgba(34, 197, 94, 0.10);
+    border: 1px solid rgba(34, 197, 94, 0.18);
+
+    color: #4ade80;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+            SUCCESS MESSAGE
+========================================== */
+
+.attendance-success-message {
+    display: flex;
+    align-items: center;
+
+    min-height: 45px;
+
+    padding: 11px 15px;
+
+    border-radius: 10px;
+
+    background: rgba(34, 197, 94, 0.09);
+    border: 1px solid rgba(34, 197, 94, 0.25);
+
+    color: #4ade80;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* ==========================================
+                ERROR MESSAGE
+========================================== */
+
+.attendance-error-message,
+.error-box {
+    display: flex;
+    align-items: center;
+
+    min-height: 45px;
+
+    padding: 11px 15px;
+
+    border-radius: 10px;
+
+    background: rgba(220, 38, 38, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.45);
+
+    color: #fca5a5;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* ==========================================
+                SUMMARY
+========================================== */
+
+.attendance-summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+.summary-box {
+    position: relative;
+
+    background: #181818;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+
+    padding: 20px 21px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.summary-box::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.summary-box:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(255, 255, 255, 0.13);
+}
+
+.summary-box h4 {
+    margin: 0;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.summary-box h2 {
+    color: #ffffff;
+
+    margin: 9px 0 0;
+
+    font-size: 29px;
+    line-height: 1;
+
+    font-weight: 700;
+}
+
+
+/* ==========================================
+                TOOLBAR
+========================================== */
+
+.attendance-toolbar {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 4px 0;
+
+    flex-wrap: wrap;
+}
+
+
+/* ==========================================
+                SEARCH
+========================================== */
+
+.search-box {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    height: 45px;
+
+    flex: 1;
+
+    min-width: 240px;
+
+    padding: 0 14px;
+
+    background: #181818;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+
+    color: #6b7280;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.search-box:focus-within {
+    border-color: rgba(59, 130, 246, 0.65);
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.search-box svg {
+    flex-shrink: 0;
+    font-size: 13px;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+.search-box input::placeholder {
+    color: #6b7280;
+}
+
+
+/* ==========================================
+                SELECTS
+========================================== */
+
+.attendance-toolbar select {
+    height: 45px;
+
+    min-width: 165px;
+
+    padding: 0 36px 0 13px;
+
+    border-radius: 10px;
+
+    background-color: #181818;
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    outline: none;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.attendance-toolbar select:hover {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.attendance-toolbar select:focus {
+    border-color: rgba(59, 130, 246, 0.65);
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.attendance-toolbar select option {
+    background: #181818;
+    color: #ffffff;
+}
+
+
+/* ==========================================
+            RESPONSIVE - 1100px
+========================================== */
+
+@media (max-width: 1100px) {
+
+    .attendance-summary {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .admin-self-attendance-status {
+        flex-wrap: wrap;
+    }
+
+    .admin-today-status,
+    .admin-today-time {
+        flex: 1;
+    }
+
+    .admin-attendance-buttons {
+        width: 100%;
+        margin-left: 0;
+
+        justify-content: flex-start;
+
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+}
+
+
+/* ==========================================
+            RESPONSIVE - 700px
+========================================== */
+
+@media (max-width: 700px) {
+
+    .attendance-management {
+        gap: 18px;
+    }
+
+    .attendance-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .attendance-header h2 {
+        font-size: 25px;
+    }
+
+    .attendance-refresh-btn {
+        width: 100%;
+    }
+
+    .admin-self-attendance {
+        padding: 18px;
+    }
+
+    .admin-self-attendance-status {
+        flex-direction: column;
+    }
+
+    .admin-today-status,
+    .admin-today-time {
+        width: 100%;
+        min-width: 0;
+
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .admin-today-status:last-of-type,
+    .admin-today-time:last-of-type {
+        border-bottom: none;
+    }
+
+    .admin-attendance-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-check-in-btn,
+    .admin-check-out-btn,
+    .admin-attendance-completed {
+        width: 100%;
+    }
+
+    .attendance-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .search-box {
+        width: 100%;
+        min-width: 100%;
+        flex-basis: 100%;
+    }
+
+    .attendance-toolbar select {
+        flex: 1;
+        min-width: 0;
+    }
+
+}

@@ -1,0 +1,88 @@
+.employee-attendance-table-card{
+
+    background:#1d1d1d;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.employee-attendance-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.employee-attendance-table th,
+
+.employee-attendance-table td{
+
+    padding:18px;
+
+    text-align:left;
+
+}
+
+.employee-attendance-table thead{
+
+    background:#242424;
+
+}
+
+.employee-attendance-table th{
+
+    color:#9ca3af;
+
+}
+
+.employee-attendance-table tbody tr{
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+}
+
+.employee-attendance-table td{
+
+    color:white;
+
+}
+.status{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.status.present{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+.status.absent{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+}
+
+.status.late{
+
+    background:#fef3c7;
+
+    color:#d97706;
+
+}

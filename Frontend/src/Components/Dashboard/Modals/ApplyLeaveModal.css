@@ -1,0 +1,131 @@
+.leave-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.leave-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.leave-group label{
+
+    color:#d1d5db;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.leave-group input,
+
+.leave-group textarea,
+
+.leave-group select{
+
+    width:100%;
+
+    padding:13px 15px;
+
+    background:#202020;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    color:white;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.leave-group input:focus,
+
+.leave-group textarea:focus,
+
+.leave-group select:focus{
+
+    border-color:#2563eb;
+
+}
+
+.leave-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:16px;
+
+}
+
+.leave-group textarea{
+
+    resize:none;
+
+}
+
+.leave-buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    margin-top:12px;
+
+}
+
+.cancel-btn{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2b2b2b;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.submit-btn{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.submit-btn:hover{
+
+    box-shadow:0 12px 24px rgba(37,99,235,.35);
+
+}

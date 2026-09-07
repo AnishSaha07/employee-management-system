@@ -1,0 +1,212 @@
+.task-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+/* ===========================
+        FORM ROW
+=========================== */
+
+.task-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+/* ===========================
+        FORM GROUP
+=========================== */
+
+.task-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.task-group label{
+
+    color:#d1d5db;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.task-group input,
+.task-group select,
+.task-group textarea{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:14px;
+
+    padding:14px 18px;
+
+    background:#1a1a1a;
+
+    color:#fff;
+
+    font-size:15px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+    resize:none;
+
+}
+
+.task-group input,
+.task-group select{
+
+    height:52px;
+
+}
+
+.task-group textarea{
+
+    min-height:120px;
+
+    line-height:1.6;
+
+}
+
+.task-group input:focus,
+.task-group select:focus,
+.task-group textarea:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+.task-group input::placeholder,
+.task-group textarea::placeholder{
+
+    color:#777;
+
+}
+
+/* ===========================
+        BUTTONS
+=========================== */
+
+.task-buttons{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+    margin-top:10px;
+
+}
+
+.task-buttons .cancel-btn{
+
+    width:150px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#222;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.task-buttons .cancel-btn:hover{
+
+    background:#303030;
+
+}
+
+.task-buttons .create-btn{
+
+    width:180px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.task-buttons .create-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+.task-row{
+
+    grid-template-columns:1fr;
+
+}
+
+.task-buttons{
+
+    flex-direction:column;
+
+}
+
+.task-buttons .cancel-btn,
+.task-buttons .create-btn{
+
+    width:100%;
+
+}
+
+}

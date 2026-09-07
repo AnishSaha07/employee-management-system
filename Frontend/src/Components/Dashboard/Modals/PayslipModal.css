@@ -1,0 +1,295 @@
+.payslip{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.payslip-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.payslip-header h2{
+
+    color:#fff;
+
+    font-size:28px;
+
+}
+
+.payslip-header p{
+
+    color:#9ca3af;
+
+    margin-top:6px;
+
+}
+
+.payslip-header svg{
+
+    color:#2563eb;
+
+    font-size:34px;
+
+}
+
+.payslip-section{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.info-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#181818;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+}
+
+.info-row span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#9ca3af;
+
+}
+
+.info-row strong{
+
+    color:#fff;
+
+}
+
+.salary-box{
+
+    background:#181818;
+
+    border-radius:18px;
+
+    padding:20px;
+
+}
+
+.salary-box h3{
+
+    color:#fff;
+
+    margin-bottom:18px;
+
+}
+
+.salary-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:14px;
+
+}
+
+.salary-row span{
+
+    color:#9ca3af;
+
+}
+
+.salary-row strong{
+
+    color:#fff;
+
+}
+
+.net-salary{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    padding:22px;
+
+    border-radius:18px;
+
+}
+
+.net-salary svg{
+
+    font-size:34px;
+
+    color:#fff;
+
+}
+
+.net-salary span{
+
+    color:#dbeafe;
+
+}
+
+.net-salary h2{
+
+    color:#fff;
+
+    margin-top:6px;
+
+    font-size:32px;
+
+}
+
+.download-payslip-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#22c55e;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.download-payslip-btn:hover{
+
+    background:#16a34a;
+
+}
+
+@media(max-width:768px){
+
+    .payslip-section{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/* =========================================
+        PAYSLIP TOTAL ROW
+========================================= */
+
+.payslip .salary-row.total-row {
+
+    margin-top: 8px;
+
+    padding-top: 14px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.payslip .salary-row.total-row span {
+
+    color: #fff;
+
+    font-weight: 600;
+
+}
+
+.payslip .salary-row.total-row strong {
+
+    color: #fff;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+        PAYSLIP RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .payslip {
+
+        padding: 5px;
+
+    }
+
+    .payslip-header {
+
+        gap: 10px;
+
+    }
+
+    .payslip-header h2 {
+
+        font-size: 20px;
+
+    }
+
+    .info-row {
+
+        gap: 15px;
+
+    }
+
+    .info-row strong {
+
+        text-align: right;
+
+        word-break: break-word;
+
+    }
+
+    .salary-row {
+
+        gap: 15px;
+
+    }
+
+}

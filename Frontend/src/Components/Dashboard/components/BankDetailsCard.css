@@ -1,0 +1,169 @@
+.bank-details-card{
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:24px;
+
+}
+
+.bank-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:24px;
+
+    gap:20px;
+
+}
+
+.bank-header h3{
+
+    color:#fff;
+
+    font-size:22px;
+
+    margin-bottom:6px;
+
+}
+
+.bank-header p{
+
+    color:#9ca3af;
+
+    font-size:14px;
+
+}
+
+.bank-warning{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:rgba(245,158,11,.15);
+
+    color:#f59e0b;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.bank-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.bank-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    background:#202020;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.25s;
+
+}
+
+.bank-item:hover{
+
+    border-color:#2563eb;
+
+    transform:translateY(-3px);
+
+}
+
+.bank-item svg{
+
+    color:#3b82f6;
+
+    font-size:18px;
+
+    margin-top:3px;
+
+}
+
+.bank-item span{
+
+    display:block;
+
+    color:#9ca3af;
+
+    font-size:13px;
+
+    margin-bottom:5px;
+
+}
+
+.bank-item strong{
+
+    color:#fff;
+
+    font-size:15px;
+
+    word-break:break-word;
+
+}
+
+.bank-note{
+
+    margin-top:24px;
+
+    background:rgba(37,99,235,.10);
+
+    border-left:4px solid #2563eb;
+
+    padding:16px;
+
+    color:#d1d5db;
+
+    border-radius:12px;
+
+    line-height:1.6;
+
+}
+
+@media(max-width:768px){
+
+.bank-header{
+
+    flex-direction:column;
+
+}
+
+.bank-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}

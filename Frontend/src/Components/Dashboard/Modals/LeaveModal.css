@@ -1,0 +1,383 @@
+.leave-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+/* ===========================
+        LEFT PANEL
+=========================== */
+
+.leave-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.leave-form h3{
+
+    color:#fff;
+
+    font-size:22px;
+
+    margin-bottom:5px;
+
+}
+
+.leave-form input,
+.leave-form select,
+.leave-form textarea{
+
+    width:100%;
+
+    background:#1a1a1a;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:14px;
+
+    color:#fff;
+
+    padding:15px 18px;
+
+    outline:none;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.leave-form input,
+.leave-form select{
+
+    height:52px;
+
+}
+
+.leave-form textarea{
+
+    resize:none;
+
+    min-height:120px;
+
+}
+
+.leave-form input:focus,
+.leave-form select:focus,
+.leave-form textarea:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+.leave-form input::placeholder,
+.leave-form textarea::placeholder{
+
+    color:#777;
+
+}
+
+/* ===========================
+        DATE ROW
+=========================== */
+
+.date-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+}
+
+/* ===========================
+        SUBMIT BUTTON
+=========================== */
+
+.leave-form .create-btn{
+
+    width:100%;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.leave-form .create-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(37,99,235,.30);
+
+}
+
+/* ===========================
+      RIGHT PANEL
+=========================== */
+
+.pending-section{
+
+    background:#171717;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:18px;
+
+    padding:20px;
+
+    max-height:520px;
+
+    overflow-y:auto;
+
+}
+
+.pending-section h3{
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+.empty{
+
+    color:#888;
+
+    text-align:center;
+
+    padding:40px 0;
+
+}
+
+/* ===========================
+      LEAVE CARD
+=========================== */
+
+.leave-card{
+
+    background:#202020;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:16px;
+
+    padding:18px;
+
+    margin-bottom:16px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    transition:.3s;
+
+}
+
+.leave-card:hover{
+
+    border-color:#2563eb;
+
+    transform:translateY(-2px);
+
+}
+
+.leave-card h4{
+
+    color:#fff;
+
+    margin-bottom:6px;
+
+    font-size:17px;
+
+}
+
+.leave-card span{
+
+    display:inline-block;
+
+    background:#2563eb22;
+
+    color:#60a5fa;
+
+    padding:5px 12px;
+
+    border-radius:50px;
+
+    font-size:12px;
+
+    margin-bottom:8px;
+
+}
+
+.leave-card p{
+
+    color:#9ca3af;
+
+    font-size:13px;
+
+}
+
+/* ===========================
+      ACTION BUTTONS
+=========================== */
+
+.leave-actions{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.approve,
+.reject{
+
+    width:110px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.approve{
+
+    background:#16a34a;
+
+    color:#fff;
+
+}
+
+.approve:hover{
+
+    background:#15803d;
+
+}
+
+.reject{
+
+    background:#dc2626;
+
+    color:#fff;
+
+}
+
+.reject:hover{
+
+    background:#b91c1c;
+
+}
+
+/* ===========================
+      SCROLLBAR
+=========================== */
+
+.pending-section::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.pending-section::-webkit-scrollbar-thumb{
+
+    background:#333;
+
+    border-radius:20px;
+
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:1000px){
+
+.leave-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.pending-section{
+
+    max-height:350px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.date-row{
+
+    grid-template-columns:1fr;
+
+}
+
+.leave-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+}
+
+.leave-actions{
+
+    width:100%;
+
+    flex-direction:row;
+
+}
+
+.approve,
+.reject{
+
+    flex:1;
+
+}
+
+}

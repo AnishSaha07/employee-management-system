@@ -1,0 +1,231 @@
+.profile-card{
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    position:sticky;
+
+    top:100px;
+
+}
+
+.profile-banner{
+
+    width:100%;
+
+    height:120px;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+}
+
+.profile-avatar-wrapper{
+
+    position:relative;
+
+    margin-top:-55px;
+
+}
+
+.profile-avatar{
+
+    width:110px;
+
+    height:110px;
+
+    border-radius:50%;
+
+    border:5px solid #181818;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    object-fit:cover;
+
+}
+
+.camera-btn{
+
+    position:absolute;
+
+    bottom:5px;
+
+    right:5px;
+
+    width:34px;
+
+    height:34px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.profile-content{
+
+    padding:25px;
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.profile-content h2{
+
+    color:white;
+
+    font-size:24px;
+
+    margin-bottom:6px;
+
+}
+
+.profile-content p{
+
+    color:#9ca3af;
+
+    margin-bottom:5px;
+
+}
+
+.profile-content span{
+
+    color:#3b82f6;
+
+    font-size:14px;
+
+}
+
+.employee-id{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    background:#202020;
+
+    padding:12px 15px;
+
+    border-radius:12px;
+
+    color:#9ca3af;
+
+}
+
+.employee-id strong{
+
+    color:white;
+
+}
+
+.employee-status{
+
+    margin-top:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#22c55e;
+
+    font-weight:600;
+
+}
+
+.employee-status svg{
+
+    font-size:10px;
+
+}
+
+.edit-profile-btn{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.edit-profile-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+@media(max-width:1100px){
+
+.profile-card{
+
+    position:static;
+
+}
+
+}

@@ -1,0 +1,170 @@
+.salary-breakdown-card{
+
+    background:#181818;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.salary-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.salary-header h3{
+
+    color:#fff;
+
+    font-size:20px;
+
+}
+
+.salary-header p{
+
+    color:#9ca3af;
+
+    margin-top:6px;
+
+    font-size:14px;
+
+}
+
+.salary-header svg{
+
+    color:#3b82f6;
+
+    font-size:28px;
+
+}
+
+.salary-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.salary-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.salary-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.salary-title span{
+
+    color:#e5e7eb;
+
+    font-size:15px;
+
+}
+
+.salary-row strong{
+
+    color:#fff;
+
+}
+
+.earning-icon{
+
+    color:#22c55e;
+
+}
+
+.deduction-icon{
+
+    color:#ef4444;
+
+}
+
+.salary-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-top:10px;
+
+}
+
+.salary-footer span{
+
+    color:#9ca3af;
+
+    font-size:15px;
+
+}
+
+.salary-footer h2{
+
+    color:#22c55e;
+
+    font-size:28px;
+
+}
+/* =========================================
+        TOTAL ROW
+========================================= */
+
+.salary-row.total-row {
+
+    margin-top: 8px;
+
+    padding-top: 14px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+}
+
+.salary-row.total-row span {
+
+    color: #fff;
+
+    font-weight: 600;
+
+}
+
+.salary-row.total-row strong {
+
+    color: #fff;
+
+    font-weight: 700;
+
+}

@@ -1,0 +1,226 @@
+/* =========================================
+        TASK SUMMARY
+========================================= */
+
+.task-summary-card {
+    width: 100%;
+    min-height: 340px;
+
+    background: #161616;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 16px;
+
+    
+
+    padding: 28px;
+
+    color: #fff;
+}
+
+
+/* =========================================
+        HEADER
+========================================= */
+
+.box-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.box-header h3 {
+    margin: 0;
+
+    color: #fff;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+.badge-count {
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: rgba(37, 99, 235, 0.12);
+
+    border: 1px solid rgba(37, 99, 235, 0.25);
+
+    color: #60a5fa;
+
+    font-size: 11px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+        DONUT WRAPPER
+========================================= */
+
+.task-donut-wrap {
+    min-height: 250px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 45px;
+
+    padding: 10px;
+}
+
+
+/* =========================================
+        DONUT
+========================================= */
+
+.donut-svg {
+    width: 180px;
+
+    height: 180px;
+
+    flex-shrink: 0;
+
+    overflow: visible;
+}
+
+
+/* =========================================
+        LEGEND
+========================================= */
+
+.task-legend {
+    min-width: 150px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.legend-row {
+    display: grid;
+
+    grid-template-columns: 12px 1fr auto;
+
+    align-items: center;
+
+    column-gap: 8px;
+
+    font-size: 13px;
+}
+
+.legend-row svg {
+    width: 8px;
+
+    height: 8px;
+}
+
+.legend-label {
+    color: #cbd5e1;
+}
+
+.legend-count {
+    color: #fff;
+
+    font-weight: 600;
+
+    min-width: 20px;
+
+    text-align: right;
+}
+
+
+/* =========================================
+        HOVER
+========================================= */
+
+.task-legend .legend-row {
+    transition: transform 0.2s ease;
+}
+
+.task-legend .legend-row:hover {
+    transform: translateX(3px);
+}
+
+
+/* =========================================
+        RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .task-donut-wrap {
+        gap: 25px;
+    }
+
+    .donut-svg {
+        width: 160px;
+
+        height: 160px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .task-donut-wrap {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .task-legend {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .task-summary-card {
+        padding: 18px;
+    }
+
+    .box-header h3 {
+        font-size: 15px;
+    }
+
+    .task-donut-wrap {
+        min-height: auto;
+
+        padding: 5px 0;
+    }
+
+    .donut-svg {
+        width: 150px;
+
+        height: 150px;
+    }
+
+    .task-legend {
+        grid-template-columns: 1fr;
+
+        width: 100%;
+    }
+
+}

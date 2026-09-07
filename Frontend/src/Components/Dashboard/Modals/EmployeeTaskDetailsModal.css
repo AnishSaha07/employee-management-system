@@ -1,0 +1,75 @@
+.task-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.detail{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.detail label{
+
+    color:#9ca3af;
+
+    font-size:14px;
+
+}
+
+.detail p{
+
+    color:white;
+
+}
+
+.detail select{
+
+    background:#202020;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:10px;
+
+    padding:12px;
+
+}
+
+.save-btn{
+
+    margin-top:10px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.save-btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}

@@ -1,0 +1,109 @@
+.employee-tasks{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    padding:24px;
+
+}
+
+.employee-page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.employee-page-header h2{
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+.employee-page-header p{
+
+    color:#9ca3af;
+
+    margin-top:6px;
+
+}
+
+.task-summary-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:18px;
+
+}
+
+.summary-card{
+
+    background:#1b1b1b;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:20px;
+
+}
+
+.summary-card span{
+
+    color:#9ca3af;
+
+}
+
+.summary-card h2{
+
+    color:white;
+
+    margin-top:10px;
+
+    font-size:30px;
+
+}
+
+.employee-toolbar{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.employee-toolbar input,
+
+.employee-toolbar select{
+
+    background:#202020;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    padding:12px 16px;
+
+}
+
+.employee-toolbar input{
+
+    flex:1;
+
+    min-width:260px;
+
+}

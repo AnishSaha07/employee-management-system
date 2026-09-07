@@ -1,0 +1,45 @@
+.employee-profile-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.employee-profile-grid{
+
+    display:grid;
+
+    grid-template-columns:340px 1fr;
+
+    gap:24px;
+
+    align-items:start;
+
+}
+
+.employee-profile-grid>*{
+
+    min-width:0;
+
+}
+
+.employee-profile-grid>:nth-child(3),
+
+.employee-profile-grid>:nth-child(4){
+
+    grid-column:span 1;
+
+}
+
+@media(max-width:1100px){
+
+.employee-profile-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}

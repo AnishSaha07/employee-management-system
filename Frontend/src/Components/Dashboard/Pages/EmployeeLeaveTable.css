@@ -1,0 +1,131 @@
+.employee-leave-table-card{
+
+    background:#1b1b1b;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.employee-leave-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.employee-leave-table thead{
+
+    background:#232323;
+
+}
+
+.employee-leave-table th{
+
+    color:#9ca3af;
+
+    padding:18px;
+
+    text-align:left;
+
+    font-size:14px;
+
+}
+
+.employee-leave-table td{
+
+    color:white;
+
+    padding:18px;
+
+}
+
+.employee-leave-table tbody tr{
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+    transition:.25s;
+
+}
+
+.employee-leave-table tbody tr:hover{
+
+    background:#232323;
+
+}
+
+.empty-row{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#9ca3af;
+
+}
+
+.view-btn{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.view-btn:hover{
+
+    transform:scale(1.08);
+
+}
+
+.status{
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.status.pending{
+
+    background:#fef3c7;
+
+    color:#d97706;
+
+}
+
+.status.approved{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+.status.rejected{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+}

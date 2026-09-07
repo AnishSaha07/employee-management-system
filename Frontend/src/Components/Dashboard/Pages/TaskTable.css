@@ -1,0 +1,187 @@
+.task-table-card{
+
+    background:#181818;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.task-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.task-table th,
+.task-table td{
+
+    padding:18px;
+
+    text-align:left;
+
+}
+
+.task-table thead{
+
+    background:#202020;
+
+}
+
+.task-table th{
+
+    color:#9ca3af;
+
+}
+
+.task-table tbody tr{
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+}
+
+.employee-cell h4{
+
+    color:white;
+
+    margin-bottom:4px;
+
+}
+
+.employee-cell span{
+
+    color:#9ca3af;
+
+    font-size:13px;
+
+}
+
+.task-cell strong{
+
+    color:white;
+
+}
+
+.task-cell p{
+
+    color:#9ca3af;
+
+    margin-top:6px;
+
+    font-size:13px;
+
+}
+
+.priority,
+.status{
+
+    display:inline-block;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.priority.low{
+
+    background:#22c55e22;
+
+    color:#22c55e;
+
+}
+
+.priority.medium{
+
+    background:#f59e0b22;
+
+    color:#f59e0b;
+
+}
+
+.priority.high{
+
+    background:#ef444422;
+
+    color:#ef4444;
+
+}
+
+.status.pending{
+
+    background:#3b82f622;
+
+    color:#3b82f6;
+
+}
+
+.status.in-progress{
+
+    background:#f59e0b22;
+
+    color:#f59e0b;
+
+}
+
+.status.completed{
+
+    background:#22c55e22;
+
+    color:#22c55e;
+
+}
+
+.task-actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.task-actions button{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    color:white;
+
+}
+
+.edit-btn{
+
+    background:#2563eb;
+
+}
+
+.delete-btn{
+
+    background:#dc2626;
+
+}
+
+.empty-row{
+
+    text-align:center;
+
+    color:#9ca3af;
+
+    padding:40px;
+
+}

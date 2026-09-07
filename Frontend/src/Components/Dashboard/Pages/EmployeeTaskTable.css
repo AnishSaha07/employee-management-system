@@ -1,0 +1,89 @@
+.employee-task-table-card{
+
+    background:#181818;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.employee-task-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.employee-task-table th,
+
+.employee-task-table td{
+
+    padding:18px;
+
+    text-align:left;
+
+}
+
+.employee-task-table thead{
+
+    background:#202020;
+
+}
+
+.employee-task-table th{
+
+    color:#9ca3af;
+
+}
+
+.employee-task-table tbody tr{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.employee-task-table h4{
+
+    color:white;
+
+    margin-bottom:5px;
+
+}
+
+.employee-task-table small{
+
+    color:#9ca3af;
+
+}
+
+.view-btn{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.empty-row{
+
+    text-align:center;
+
+    color:#9ca3af;
+
+    padding:40px;
+
+}
